@@ -1,0 +1,967 @@
+*
+{
+margin: 0;
+padding: 0;
+}
+body
+{
+ font-family:  "Canela";
+ box-sizing: border-box;
+}
+p
+{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+a
+{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+#section-one
+{
+  background:  #F2F2F2 ;
+}
+/*==================top section ===================*/
+#top-section
+{
+  background-color: black;
+}
+.main-div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 100px;
+
+}
+.main-div p{
+  color: white;
+  font-size: 13px;
+  font-family: 'Poppins';
+  opacity: 0.7;
+}
+.main-div ul 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+.main-div ul li 
+{
+  padding: 0 10px;
+}
+.main-div ul li a
+{
+   color: white;
+   font-size: 12px;
+   font-family: 'Raleway';
+   text-transform: uppercase;
+}
+/*===================navbar CSS start============*/
+.logo a{
+  color: rgb(0, 0, 0);
+}
+nav
+ {
+
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar
+{
+  width: 26px;
+}
+.logo {
+  margin-left: -12%;
+}
+
+
+.bar-with-searchbox
+ {
+  display: flex;
+}
+.search-box img
+{
+ width: 18px;
+}
+.search-box
+{
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+}
+.search-box input
+{
+  border: none;
+  color: black;
+  margin: 0 10px;
+  background-color: #F2F2F2;
+}
+.search-box input::placeholder { 
+  color: rgb(0, 0, 0);
+  font-family: "Raleway";
+  font-size: 15px;
+    font-weight: 800;
+}
+.login-btn a
+{
+  color: black;
+  padding: 0 20px;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-size: 15px;
+    font-weight: 800;
+}
+.login-btn a:first-child
+{
+   border-right: 1px solid black;
+
+}
+/*----------Hidden nav bar css start------------*/
+.hidden-nav
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    z-index: 999;
+}  
+.hidden-nav.show
+{
+  display: block;
+}
+.hidden-nav p
+{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+ul.link 
+{
+    list-style: none;
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    padding: 0;
+}
+ul.link li
+{
+    margin: 20px;
+    text-align: center;
+}
+ul.link li a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+ 
+}
+.top-text
+ {
+   display: flex;
+   justify-content: space-between;
+   margin: 50px;
+}
+.close-btn
+{
+   display: flex;
+   cursor: pointer;
+}
+
+.close-btn img
+{
+  width: 20px;
+  margin: 0 10px;
+}
+
+.social-icon img
+{
+  width: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.bottom-text
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*============Container section start css =================*/
+.cards
+{
+  padding-bottom: 50px;
+}
+.cards h3
+{
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+.cards p
+{
+  margin: 20px 0;
+  font-family: 'Raleway';
+  color: #726D67;
+  font-weight: 500;
+}
+#View-products
+{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Raleway';
+}
+#View-products::after
+{
+   content: "";
+   background-image: url("img/Arrow.svg");
+   width: 48px;
+   height: 30px;
+   background-repeat: no-repeat;
+   display: inline-block;
+   position: absolute;
+   margin-left: 20px;
+   margin-top: 5px;
+}
+.padding
+{
+ padding: 60px 0;
+}
+/*------------Second container css start-----------*/
+.white-cover
+{
+  background: white;  
+}
+.half-cover 
+{
+  margin-left: auto;
+  max-width: 1064px !important;
+  padding: 40px 0px;
+}
+.half-cover .col-lg-5
+{
+  padding: 30px 30px 30px 0px;
+}
+.half-cover .col-lg-7
+{
+  padding: 30px ;
+}
+.girl-text h1
+{
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.girl-text p
+{
+    padding: 10px 20px;
+    color: #5C5C5C;
+    font-family: 'Raleway';
+    font-weight: 500;
+    line-height: 168%;
+}
+.girl-text h4
+{
+  padding: 20px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Poppins';
+  line-height: 137.5%;
+}
+.black-box
+{
+  background-color: black;
+  width: 12%;
+  position: sticky;
+  top: 10%;
+  left: 5%;
+  height: 495px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px #7a7a7a;
+}
+.black-box ul
+{
+  padding-left: 0%;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.black-box ul li 
+{
+  padding: 10px 15px;
+  border-bottom: .1px solid rgb(61, 61, 61);
+  list-style: none;
+}
+.black-box ul li img
+{
+  width: 70%;
+}
+.heat-img
+{
+  width: 30% !important;
+}
+.black-box ul li p
+{
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+  font-family: 'Raleway';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.active-drop
+{
+    border-top: 18px solid transparent;
+    border-left: 24px solid rgb(0, 0, 0);
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    right: -12%;
+    margin-top: -44%;
+    display: none;
+}
+.active-drop-open
+{
+  display: block;
+}
+.roted-text
+{
+    transform: rotate( -90deg);
+    margin-top: 80%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+.jack
+{
+  padding: 0%;
+}
+.lake
+{
+  padding: 5px;
+}
+.lake p
+{
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+.col-wall 
+{
+  background-image: url(img/tree.png);
+  background-size: cover;
+  background-position: right;
+}
+.col-wall h1 
+{
+  font-weight: 500;
+}
+.col-wall p
+{
+  padding: 10px 0px;
+  color: #5C5C5C;
+  font-family: 'Poppins';
+  font-weight: 300;
+  line-height: 168%;
+}
+
+.text-circel
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px 0px 0;
+  align-items: center;
+  justify-content: center;
+}
+.text-circel span
+{
+  background-color: #808080;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  margin: 15px 20px 20px 0;
+  border-radius: 50%;
+  text-align: center;
+}
+.text-circel p 
+{
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+}
+.main-group
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.last{
+  margin-top: 30px;
+}
+
+/*-------------------tHIRD SECTION CSS START--------------*/
+
+.BOX-ONE span
+{
+  font-family: 'Poppins';
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.BOX-ONE p
+{
+  font-family: 'Poppins';
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.BOX h2
+{
+  margin: 10px;
+  font-weight: 500;
+  line-height: 124%;
+}
+.BOX-ONE
+{
+    background-color: #808080;
+    color: white;
+    padding: 30px 60px !important;
+}
+.BOX-TWO
+{
+    background-color: black;
+    color: white;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+}
+.BOX-TWO img
+{
+  width: 50px;
+  margin: 20px;
+}
+.BOX-TWO span
+{
+  font-family: 'Poppins';
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+/*----------SIX CONTAINER CSS START------------*/
+.only-text
+{
+   text-align: center;
+   width: 100%;
+   max-width: 840px;
+   margin: 40px auto;
+}
+.only-text span
+{
+   color: #25386F;
+   font-family: 'Raleway';
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 0.42em;
+}
+.only-text h1
+{
+  margin: 20px;
+  font-weight: 500;
+}
+.only-text p
+{
+  padding: 10px 0px;
+  color: #5C5C5C;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+/*--------------seven container page css start--------------*/
+.img-box 
+{
+  background: #ECECEC;
+  padding: 20px;
+  margin-right: 10px;
+  height: 318px;
+}
+.img-g
+{
+  height: 318px;
+}
+.img-box img
+{
+  padding: 10px 40px;
+}
+
+.img-box  span
+{
+  font-family: 'Raleway';
+}
+.img-box  p
+{
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.blue-text {
+  color: #25386F;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin: 5px 20px;
+  font-size: 18px;
+}
+
+.quite
+{
+  position: relative;
+}
+.box-sky
+{
+  background-color: #ECECEC;
+  position: absolute;
+  bottom: -18px;
+  left: 28px;
+  right: 0;
+  width: 83%;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 500 !important;
+}
+.height-two
+{
+  height: 318px;
+}
+.gape-top
+{
+  padding-top: 80px ;
+  padding-bottom: 80px ;
+}
+
+
+/*---------------------display-container css start-----------------*/
+.display-container
+{
+  max-width: 1150px !important;
+  margin-top: 30px;
+}
+.display-task
+{
+  position: relative;
+}
+.position-text
+{
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  left: 0;
+  width: 91%;
+  padding: 13px 24px;
+  margin-left: 11px;
+}
+.position-text p
+{
+  color: white;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+.team-img
+{
+  display: flex;
+}
+.team-img img
+{
+  width: 30px;
+  margin: 10px 0;
+}
+section#section-two 
+{
+  border-top: 22px solid #f2f2f2;
+}
+.Latest-text
+{
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+/*-----------------------footer section start ---------------------*/
+#footer
+{
+  background-color: black;
+}
+.footer-row
+{
+  padding-top: 20px ;
+  padding-bottom: 80px;
+  color: white;
+}
+.footer-row .logo a{
+  color: rgb(255, 255, 255);
+}
+.footer-row .number
+{
+  font-family: "Poppins";
+  font-weight: 300 ;
+  font-size: 25px;
+  margin: 20px 0;
+}
+.footer-row .logo
+{
+  margin-left: 0 !important;
+}
+.footer-row .email
+{
+  font-family: "Raleway";
+  font-weight: 400 ;
+  font-size: 17px;
+  margin: 20px 0;
+}
+.Quick-text
+{
+  font-size: 22px;
+}
+.footer-row ul
+{ 
+  padding: 0;
+}
+.footer-row ul li
+{ 
+  list-style: none;
+  padding: 17px 60px 0 0;
+}
+.footer-row ul li a
+{ 
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 300 ;
+  font-size: 17px;
+}
+.footer-row input#email {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+}
+.last-line
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #83827f;
+}
+.last-line p
+{
+  color: white;
+  font-family: "Raleway";
+  font-weight: 300 ;
+}
+.social-iconwhite 
+{
+  display: flex;
+}
+.social-iconwhite img
+{
+  width: 20px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+/*--------------------------BI SECTION FLEX----------------------*/
+div#BIG-SECTION {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+#carouselExampleIndicators
+{
+  display: none;
+}
+.carousel-inner {
+  padding: 13px;
+}
+.carousel-item h3
+{
+  margin-top: 20px;
+}
+@media (min-width: 1400px)
+{
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+     {
+        max-width: 1360px;
+     }
+}
+
+/*-------------------------------RESPONSIVE CSS START 1920-----------------------------*/
+
+@media(min-width: 1700px) and (max-width: 2000px)
+{
+   .main-div p 
+   {
+    font-size: 14px;
+   }
+   .main-div
+    {
+    padding: 5px 147px;
+   }
+   .last 
+   {
+     margin-top: 25px;
+   }
+   .logo {
+    margin-left: 0% !important;
+}
+      nav
+       {
+          max-width: 1682px;
+       }
+       .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+      {
+            max-width: 1682px;
+      }
+    .half-cover
+      {
+     max-width: 1304px !important;
+      }
+      .display-container {
+        max-width: 1652px !important;
+    }
+      .img-box 
+      {
+        height: 391px;
+       }
+       .img-g 
+       {
+          height: 389px;
+      }
+    
+       p
+       {
+         font-size: 20px; 
+       }
+       h1
+       {
+         font-size: 57px; 
+         line-height: 120%;
+         font-weight: 500;
+       }
+       .cards h3
+        {
+          font-size: 28px;
+       }
+       .login-btn a 
+       {
+          font-size: 22px;
+          padding: 0 50px;
+       }
+       .login-btn {
+        margin-right: -45px;
+      }
+       .only-text span
+        {
+        font-size: 20px;
+       }
+       .only-text 
+       {
+        max-width: 1065px;
+       }
+       .girl-text h4 
+       {
+        font-size: 20px;
+       }
+       .black-box
+       {
+         height: 661px;
+       }
+       .search-box input::placeholder { 
+        font-size: 22px;
+       }
+       .search-box img {
+        width: 24px;
+       }
+       .BOX-ONE span, p
+              {
+                font-size: 20px;
+             }
+             .BOX-ONE h2
+              {
+                font-size: 60px;
+             }
+             .BOX-TWO span {
+               font-size: 20px;
+             }             
+          .BOX-ONE
+          {
+              padding: 40px 60px !important;
+            }
+            .black-box ul li p {
+              font-size: 17px;
+          }
+          .height-two {
+            height: 360px;
+        }
+        .bigbig {
+          max-width: 1694px !important;
+      }
+}
+
+/*-------------------------------RESPONSIVE CSS START 600 MOBO -----------------------------*/
+@media(min-width: 300px) and (max-width: 900px)
+{
+      nav 
+     {
+       display: block;
+     }
+     .logo
+      {
+       margin: 20px;
+      }
+      .login-btn
+      {
+        text-align: center;
+      }
+      #View-products::after 
+      {
+        display: none;
+      }
+      .black-box 
+      {
+       display: none;
+      }
+      .girl-text
+       {
+       padding: 30px 0 !important;
+       }
+       .girl-text h1 
+       {
+         padding: 0;
+       }
+       .girl-text p
+        {
+         padding: 0;
+        }
+       .girl-text h4
+        {
+         padding: 0;
+        }
+       .roted-text 
+       {
+         transform: rotate(  0deg);
+         margin-top: 0;
+        }
+        .img-box 
+        {
+         height: 379px;
+         margin-right: 0;
+        }
+        .padding
+        {
+          padding: 0;
+        }
+        .half-cover .col-lg-5
+         {
+         padding: 0px 0px 30px 0px;
+         }
+         .footer-row .logo
+         {
+           margin: 0;
+         }
+         .quite
+          {
+           margin-bottom: 22px;
+          }
+          .hidden-nav
+           {
+            height: 65vh;
+           }
+          ul.link 
+          {
+            top: 20%;
+            left: 15%;
+          }
+          .cards
+          {
+            display: none;
+          }
+          .active-card
+          {
+            display: block;
+          }
+          #carouselExampleIndicators
+          {
+             display: block;
+          }
+          .main-div {
+            display: block;
+            padding: 5px;
+          }
+          .main-div ul {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 0;
+          }
+}
+/*-------------------------------RESPONSIVE CSS START 1000 tab-----------------------------*/
+@media(min-width: 1000px) and (max-width: 1100px)
+{
+  .black-box 
+  {
+   display: none;
+  }
+  .img-g {
+    height: 284px;
+    }
+    .img-box {
+      height: 284px;
+  }
+}
+@media (min-width: 992px){
+.col-lg-5 {
+    width: 35.666667% !important;
+}
+.col-lg-7 {
+  width: 64.333333% !important;
+}
+}
+
+.low-color
+{
+  color: #FFFFFF;
+  opacity: 0.66;
+  font-family: Poppins;
+  font-size: 15.5646px;
+line-height: 162%;
+margin-top: 30px;
+}
+.bif
+{
+  width: 100% !important;
+}
+/*=====================last end adding====================*/
+.bigbig {
+  max-width: 1211px;
+  background: white;
+  margin: auto;
+}
+.howqui {
+  background: #f2f2f2;
+}
